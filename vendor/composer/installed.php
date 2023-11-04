@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b6102114002502d1a15e1182001a617b39c7c3bf',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -18,6 +18,15 @@
             'install_path' => __DIR__ . '/../bacon/bacon-qr-code',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'barryvdh/laravel-debugbar' => array(
+            'pretty_version' => 'v3.9.2',
+            'version' => '3.9.2.0',
+            'reference' => 'bfd0131c146973cab164e50f5cdd8a67cc60cab1',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../barryvdh/laravel-debugbar',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'brick/math' => array(
             'pretty_version' => '0.11.0',
@@ -425,9 +434,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b6102114002502d1a15e1182001a617b39c7c3bf',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -540,6 +549,15 @@
             'install_path' => __DIR__ . '/../livewire/livewire',
             'aliases' => array(),
             'dev_requirement' => false,
+        ),
+        'maximebf/debugbar' => array(
+            'pretty_version' => 'v1.19.1',
+            'version' => '1.19.1.0',
+            'reference' => '03dd40a1826f4d585ef93ef83afa2a9874a00523',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../maximebf/debugbar',
+            'aliases' => array(),
+            'dev_requirement' => true,
         ),
         'milon/barcode' => array(
             'pretty_version' => 'v10.0.1',

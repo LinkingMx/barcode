@@ -17,7 +17,7 @@
 
             <div>
                 <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                <x-input label="Name" placeholder="your name" id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
             <div class="mt-4">
@@ -39,9 +39,7 @@
                     </a>
                 @endif
 
-                <x-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-button>
+                <button>Login</button>
             </div>
         </form>
     </x-authentication-card>

@@ -1,4 +1,19 @@
 <div class="px-4 py-2 mt-4">
+
+    @push('myjs')
+        <script>
+            function printdiv() {
+            var header_str = '<html><head><title>' + document.title  + '</title></head><body>';
+            var footer_str = '</body></html>';
+            var new_str = document.getElementById('print').innerHTML;
+            var old_str = document.body.innerHTML;
+            document.body.innerHTML = header_str + new_str + footer_str;
+            window.print();
+            document.body.innerHTML = old_str;
+            return false;
+            }
+        </script>
+    @endpush
     <!--<h2 class="mb-2">Buscar codigo de Barras</h2>-->
     <div class="flex gap-2">
         <x-inputs.number wire:model="barcode" placeholder="BarCode" />
@@ -22,19 +37,7 @@
                     <img class="h-12" src="data:image/png;base64, {{ DNS1D::getBarcodePNG( $printcode[0]['code'] , 'UPCA') }} " alt="Barcode"> 
                 </div>
             </div>
-            <x-button class="mt-4" outline label="print" onClick="printdiv('print');" />
+            <button onclick="printdiv()">Print</button>
         @endif
     @endif  
 </div>
-<script>
-    function printdiv(elem) {
-    var header_str = '<html><head><title>' + document.title  + '</title></head><body>';
-    var footer_str = '</body></html>';
-    var new_str = document.getElementById(elem).innerHTML;
-    var old_str = document.body.innerHTML;
-    document.body.innerHTML = header_str + new_str + footer_str;
-    window.print();
-    document.body.innerHTML = old_str;
-    return false;
-}
-</script>
