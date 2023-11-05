@@ -6,7 +6,7 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="my-meta" content="My meta custom">
 
-        <title>Barcode</title>
+        <title>Barcode SF</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -40,6 +40,7 @@
 
             <!-- Page Content -->
             <main>
+                <p>Aqui la info del componente</p>
                 {{ $slot }}
             </main>
         </div>
@@ -49,8 +50,5 @@
         @livewireScripts
 
         @stack('my-scripts')
-
-        
-
     </body>
 </html>
