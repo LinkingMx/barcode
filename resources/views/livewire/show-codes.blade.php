@@ -6,8 +6,10 @@
             var header_str = '<html><head><title>' + document.title  + '</title></head><body>';
             var footer_str = '</body></html>';
             var new_str = document.getElementById('print').innerHTML;
+            var div_style_head = '<div style="height: 287px; width: 188px; margin-left: 40px; margin-top: 20px">';
+            var div_style_foot = '</div>';
             var old_str = document.body.innerHTML;
-            document.body.innerHTML = header_str + new_str + footer_str;
+            document.body.innerHTML = header_str + div_style_head  + new_str + div_style_foot  + footer_str;
             window.print();
             document.body.innerHTML = old_str;
             return false;
@@ -34,7 +36,7 @@
                     <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">| {{ \Carbon\Carbon::now()->toDateString() }} |</h5>
                 </div>
                 <div class="items-center">
-                    <img class="h-12" src="data:image/png;base64, {{ DNS1D::getBarcodePNG( $printcode[0]['code'] , 'UPCA') }} " alt="Barcode"> 
+                    <img class="h-12" src="data:image/png;base64, {{ DNS1D::getBarcodePNG( $printcode[0]['code'] , 'C39') }} " alt="Barcode"> 
                 </div>
             </div>
             <button onclick="printdiv()">Print</button>
