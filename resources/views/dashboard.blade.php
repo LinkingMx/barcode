@@ -11,6 +11,6 @@
                 <x-input wire.defer="barcode" placeholder="Barcode" />
             </div>
         </div>
-        {{ $barc}}
+        
     </div>
 </x-app-layout>

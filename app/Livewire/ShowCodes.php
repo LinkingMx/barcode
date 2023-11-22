@@ -12,6 +12,8 @@ class ShowCodes extends Component
 
     public $barcode;
     public $printcode;
+    public $qty;
+    public $um;
 
     public function render()
     {
@@ -20,6 +22,10 @@ class ShowCodes extends Component
 
     public function search()
     {
-        $this->printcode = Code::where('code', $this->barcode)->get();
+        $this->printcode = Code::find($this->barcode);
+    }
+
+    public function up()
+    {
     }
 }

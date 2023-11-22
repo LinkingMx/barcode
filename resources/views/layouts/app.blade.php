@@ -40,7 +40,6 @@
 
             <!-- Page Content -->
             <main>
-                <p>Aqui la info del componente</p>
                 {{ $slot }}
             </main>
         </div>
