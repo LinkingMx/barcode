@@ -8,22 +8,13 @@
             var new_str = document.getElementById('print').innerHTML;
             var div_style_head = '<div style="height: 188px; width: 287px; margin-left: 40px; margin-top: 20px">';
             var div_style_foot = '</div>';
-            var old_str = document.body.innerHTML;
             document.body.innerHTML = header_str + div_style_head  + new_str + div_style_foot  + footer_str;
             window.print();
-            document.body.innerHTML = old_str;
+            document.location.href = "dashboard"; 
             return false;
             }
         </script>
     @endpush
-
-
-    <!--
-    <div class="flex gap-2">
-        <x-inputs.number wire:model="barcode" placeholder="BarCode" />
-        <x-button outline label="Buscar" wire:click="search" />
-    </div>
-    -->
 
     <!-- search select by API -->
     <div class="flex gap-2">

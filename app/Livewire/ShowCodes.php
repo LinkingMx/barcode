@@ -27,5 +27,6 @@ class ShowCodes extends Component
 
     public function up()
     {
+        
     }
 }
