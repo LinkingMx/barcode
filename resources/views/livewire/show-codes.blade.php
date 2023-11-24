@@ -50,8 +50,8 @@
     
             <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">STANDARD FOODS</h5>
             <div class="flex gap-2 justify-between">
-                <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">{{ $printcode['name'] }}</h5>
-                <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">| {{ \Carbon\Carbon::now()->toDateString() }} |</h5>
+                <h5 class="w-2/3 mb-2 font-bold tracking-tight text-gray-900 dark:text-white">{{ $printcode['name'] }}</h5>
+                <h5 class="w-1/3 mb-2 text-base font-bold tracking-tight text-gray-900 dark:text-white">| {{ \Carbon\Carbon::now()->toDateString() }} |</h5>
             </div>
             <div class="flex gap-2 justify-between">
                 <h5 class="mb-2 font-bold tracking-tight text-gray-900 dark:text-white">Cantidad: {{ $qty }}</h5>
